@@ -23,7 +23,7 @@ export default function SearchScreen ( { route } ){
     useEffect(() => {
         const Search = async () => {
             try {
-                const data = await SearchMovies(request)
+                const data = await SearchMovies({request})
                 setPhotos(data)
                 console.log(photos)
     
